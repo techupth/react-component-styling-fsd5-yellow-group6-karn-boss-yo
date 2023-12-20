@@ -1,22 +1,21 @@
-import "./App.css";
+import React from 'react';
+import './App.css';
+import Button from './components/Button';
+import Alert from './components/Alert';
 
 function App() {
   return (
     <div className="App">
       <div className="button-components-section">
-        {/* ถ้าสร้าง Component ของ Button เสร็จแล้วให้ Uncomment โค้ดด้านล่าง เพื่อดูผลลัพธ์ */}
-        {/* <Button color="primary">Primary</Button>
-        <Button color="secondary">Secondary</Button> */}
+        <Button color="primary" nameButton="Primary" />
+        <Button color="secondary" nameButton="Secondary" />
       </div>
       <hr />
       <div className="alert-components-section">
-        {/* ถ้าสร้าง Component Alert เสร็จแล้วให้ Uncomment โค้ดด้านล่าง เพื่อดูผลลัพธ์ */}
-        {/*
-          <Alert severity="error">This is error alert box</Alert>
-          <Alert severity="warning">This is a warning alert box</Alert>
-          <Alert severity="info">This is an info alert box</Alert>
-          <Alert severity="success">This is a success alert box</Alert>
-        */}
+          <Alert severity="error" name="This is error alert box" />
+          <Alert severity="warning" name="This is a warning alert box" />
+          <Alert severity="info" name="This is an info alert box" />
+          <Alert severity="success" name="This is a success alert box" />
       </div>
     </div>
   );
